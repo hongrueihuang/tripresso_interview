@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/tripresso_interview/'
+    publicPath: './tripresso_interview/'
 }
