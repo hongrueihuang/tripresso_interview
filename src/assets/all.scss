@@ -1,0 +1,130 @@
+@import '~bootstrap/scss/functions';
+@import './helpers/variables';
+@import '~bootstrap/scss/bootstrap.scss';
+
+.bg-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.banner-image {
+    width: 100%;
+    height: 300px;
+}
+
+.btn-gotop {
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+
+}
+
+.card {
+    transition: all ease .2s;
+
+    &:hover {
+        box-shadow: 3px 3px 3px #ccc;
+    }
+
+    .card-image-parent {
+        overflow: hidden;
+
+        &:hover {
+            .card-image {
+                transform: scale(1.2);
+            }
+        }
+
+        .card-image {
+            transition: all ease .5s;
+        }
+    }
+}
+
+.reverse {
+    transform: rotate(180deg);
+}
+
+.sort-btn {
+    width: 50%;
+}
+
+.bg-cover {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn-favorite {
+    color: $secondary;
+    background-color: transparent;
+    border: none;
+
+    &:hover,
+    &:focus,
+    &.active {
+        color: $danger;
+        outline: none;
+    }
+}
+
+.tour-title {
+    a {
+        text-decoration: none;
+        color: $dark;
+        font-weight: 600;
+    }
+}
+
+.tag {
+    flex-wrap: wrap;
+}
+
+.highlight {
+    font-size: 1.5rem;
+}
+
+.groups {
+    display: flex;
+    flex-wrap: wrap;
+    height: 75px;
+    overflow: hidden;
+
+    &.show {
+        height: auto;
+    }
+
+    .groups-item {
+        margin: 5px 5px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+
+        .groups-item-quantity {
+            border: 1px solid $primary;
+            border-radius: 2px;
+            padding: 5px;
+            line-height: 1.2rem;
+        }
+    }
+}
+
+.alldate {
+    height: 200px;
+    display: flex;
+    align-items: center;
+
+    li {
+        a {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+        }
+
+    }
+}
